@@ -1,0 +1,480 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 31/08/2018, 20:27:05
+    Author     : junio
+*/
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,400');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300');
+/*font-family: 'Open Sans Condensed', sans-serif;*/
+*,*:after,*:before{margin: 0;padding: 0; font-family: 'Roboto', sans-serif; box-sizing: border-box;-moz-box-sizing: border-box;-web-box-sizing: border-box;}
+.container{width: 100%;float: left;}
+.content{width: 80%;margin: 0 10%;}
+.clear{clear: both;}
+ul{list-style: none;}
+a{text-decoration: none; color: #333;}
+img{width: 100%;}
+.dp-block{display: block;}
+.dpinline-block{display: inline-block};
+
+/*------------------ CORES DE FUNDOS ------------*/
+.bg-grey{background-color: #e9e9e9;}
+.bg-grafit{background-color: #222222;}
+.bg-grafit-cl{background-color: #403e3e;}
+.bg-gf-clear{background-color: #434343;}
+.bg-gf-media{background-color: #424141;}
+.bg-gelo{background-color: #f5f5f5;}
+.bg-white{background-color: #fff;}
+.bg-black{background-color: #000;}
+.bg-yellow{background-color: #DDB40D;}
+
+/*------------------------- BOTÕES ----------------*/
+.btn{padding: 0.5rem 2rem;font-family: 'Roboto', sans-serif;font-size: 1em;text-transform: uppercase;}
+.btn:hover{background: #eacc4f;}
+/*------------------ CORES FONTS ------------*/
+.ft-cl-black{color: #000;}
+.ft-cl-fff{color: #fff;}
+
+/*---------------------ALINHAMENTO DE FONTS ----------------*/
+.txt-center{text-align: center;}
+.txt-left{text-align: left;}
+.txt-right{text-align: right;}
+.txt-just{text-align: justify;}
+
+/*--------------------- FONTS BOLD ----------------*/
+.ft-bd-normal{font-weight: normal; }
+.ft-bold{font-weight: bold; }
+.ft-wh-three{font-weight: 300; }
+.ft-wh-for{font-weight: 400; }
+
+.font-zero{font-size: 0;}
+/*------------------------------------------CORPO SITE------------------------*/
+.main-header{position: fixed;top: 0;z-index: 4;    background: rgba(255,255,255,0.3);}
+.main-logo{ width: 8rem;height: 6rem;font-size: 0;padding: 0.8rem 0 0.8rem 0;}
+.main-logo a{
+    display: block;
+    background: url(../image/logo.png);
+    background-size: cover;
+    background-position: center;
+    width: 8rem;
+    height: 6rem;
+
+}
+.div-header{width: 100%;border-bottom: 1px solid rgba(0,0,0,0.5);padding-bottom: 1rem;}
+.main_nav{display: block;float: right;position: relative;top: -2rem;}
+.black{background: rgba(0,0,0,0.2);}
+.black .main_nav .menu li a{color: #fff;}
+.black .div-header {border-bottom: 1px solid #fff;}
+.boxsidebar{display: none;}
+.menu{display: block;list-style: none;}
+.menu li{float: left;}
+.menu li a{padding: 0.3rem 1rem;color: rgba(0,0,0,0.7);font-weight: 700;}
+.menu .active{color: #DDB40D; text-decoration: underline;}
+.menu li a:hover{color: #DDB40D;text-decoration: underline;}
+
+/*----------------------- SLIDE --------------------------------*/
+.main-slider{float: left; }
+.slider{background: #fff; position: relative; display: block;}
+.slider_controll{position: absolute; width: 100%; top: 50%;}
+.slide_nav{position: absolute; padding: 10px; font-size: 2em; background: rgba(255,255,255,0.6); cursor: pointer; z-index: 3; border-radius: 50%; -moz-border-radius: 50%; -webkit-border-radius: 50%;}
+.slide_nav.go{right: 2%;}
+.slide_nav.back{left: 2%;}
+.slider_item{display: none;}
+.slider_item.first{display: block;}
+.layer-slyder{width: 100%;height: 99.5%;background: rgba(0,0,0,0.5); z-index: 3;position: absolute;top: 0;}
+/*ABOUT*/
+.sec-sobre{padding: 2em 1em;float: left;background: #DDB40D;
+            border-radius: 15px;text-align: justify;box-shadow: 3px 3px 3px 0 rgba(0,0,0,0.5);
+            
+}
+.artic-about h2{font-size: 1.5em; font-weight: normal; text-align: center; color: #fff; }
+/*-------------------DESCRICAO MAIN -----------------------------*/
+.main-description{background-color: #fdfafa;padding: 3rem 0;float: left;width: 100%; margin-bottom: 2em;}
+.box-desc{width: calc(33.33333333333333% - 20px);text-align: center; margin: 10px;float: left;display: block;}
+.box-desc .blclrows-i img{width: 100px;height: 100px;border-radius: 50%;box-shadow: 1px 3px 3px 1px #222;margin-bottom: 1rem;}
+.box-desc h3{font-size: 1.1em;line-height: 1.2;color: #333 !important;text-transform: uppercase;}
+/* ------------DESTAQUES -----------------*/
+.destaque{width: 100%;float: left;background: #333;padding: 1rem 0.5rem;position: relative;}
+.box-destaque{width: 70%;float: left;padding: 0.5rem;}
+.box-destaque:nth-child(1){border-bottom: 0.1rem solid #fff;}
+.box-destaque:nth-child(2){border-bottom: 0.1rem solid #fff;}
+.box-destaque .thumb-dest{width: 35%;float: left;margin-right: 0.5rem;}
+.box-destaque .thumb-dest img{width: 100%;height: 5rem;float: left;filter: grayscale(0%);}
+.box-destaque .thumb-dest img:hover{filter: grayscale(100%);}
+.box-destaque .desc-destaque p{line-height: 1.2;font-size: 0.9em;text-align: justify;padding: 0.3rem;}
+.sidebar-destaque{width: 28%;right: 0; background: #ddd; position: absolute;top: 0;padding: 0.5rem;margin: 0.2rem 0.5rem;}
+.sidebar-titulo{width: 100%;background: #DDB40D; color: #fff;position: relative;right: -1rem;padding: 0.3rem;}
+.sidebar-titulo:after{content: "";width: 8px;height: 10px;background: #DDB40D;
+                      display: block;transform: skewY(-20deg);
+                      transform-origin: 20% 40%;position: absolute;
+                      top: 30px; right: 0;
+}
+.info-dest{margin-top: 1rem;width: 100%;float: left;}
+.info-thumb{width: 100%;height: auto; border: 1px solid #333;float: left;padding: 0;}
+.info-thumb img{width: 100%;height: 5rem; float: left;margin: 0;border: 0.3rem solid #fff;filter: grayscale(0%);transition: all 0.5s;}
+.info-thumb img:hover{filter: grayscale(100%);}
+.desc-info{padding: 0;margin: 0;float: left;width: 100%;}
+.desc-info h3 a{color: #333;}
+/*-------------------- PAGE ERROR ------------------*/
+.sec-error{
+    position: relative;
+    float: left;
+    background: url(../image/bg-quem-fd.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.sec-error .box-error h1{text-align: right;margin:200px  150px 0 0;color: #ff0000;}
+.sec-error .box-error h3{text-align: right;margin:0  10px 0 0;color: #333;}
+.sec-error .box-error p{text-align: left;margin:0  0 0 10px;color: #333 !important;}
+.sec-error .box-error p strong{font-size: 2em;color: #ff0000;font-weight: bold;}
+.sec-error .form_error{width: 50%;float: left;margin-right: 50%;float: left;}
+.sec-error .form_error label{margin: 25px 0 0 0;float: left;color: #333;font-weight: bold;}
+.sec-error .form_error input{width: 100%;height: 2.5rem; font-size: 1.3em;border: 2px solid #333;background: transparent;color: #333;outline: none;}
+.sec-error .form_error .textSugestao{width: 100%;border: 2px solid #333; font-size: 1.3em; float: left;background: transparent;color: #333;outline: none;}
+.sec-error .form_error .btn-404{width: 50%;float: left !important;margin: 25px 0 100px;font-weight: bold;color: #333;}
+.sec-error .form_error .btn-404:hover{background: rgba(255,255,255,0.3);color: #000;}
+
+/*---------------------------PAGE INDEX ULTIMOS PROJETOS --------------*/
+.last-house-interior{width: calc(25% - 20px);margin: 0 10px;float: left;}
+.last-project{width: 100%;margin: 1rem 0 4rem 0;float: left;text-align: center;}
+.last-project .title-header{float: left;width: 100%;margin: 1rem 0 2rem 0;}
+.last-project .title-header h3{color: #333;margin-bottom: 1rem;}
+.last-project .title-header p{color: #333;}
+/*-------------------- SEÇÃO PROJETOS -------------------------*/
+.sec-rows-project{position: relative;background: #red;}
+.thumb-project{width: 100%;float: left;position: relative;}
+.title-box{position: absolute;top: 0;padding: 0.3rem 2rem;background: #DDB40D;z-index: 4;}
+.title-box h2{font-weight: 300;}
+.title-box h2 span{color: #fff;}
+.box-thumb a{width: 20% ;float: left;}
+.box-thumb img{float: left;}
+.mirros{position: relative;}
+.layer-thumb{width: 100%;height: 100%;position: absolute;top: 0;transition: 0.3s;line-height: 10;}
+.mirros .layer-thumb h3{display: none;}
+.mirros:hover h3{font-size: 1em;font-weight: 400;color: #fff;display: block;}
+.mirros:hover .layer-thumb{background: rgba(255,255,255,0.3);}
+/*-------------------SERVICOS------------------*/
+.sec-serv{
+    position: relative;
+    background: url(../image/fundo-home-b.jpg);    
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;    
+    width: 100%;
+    height: auto;    
+}
+.art-serv{width: 100%;float: left;padding: 2rem 0;}
+.art-serv h2{font-size: 1.5em;font-weight: 400;border-bottom: 1px solid #333;margin-bottom: 2rem;}
+.box-serv{width: 70%;float: left;}
+.thumb-serv{width: calc(33.33333333333333% - 20px); margin: 0 10px;float: left;}
+.thumb-serv img{border-radius: 0px 1rem 0px 1rem;float: left;filter: grayscale(0%);}
+.thumb-serv img:hover{filter: grayscale(100%);}
+.desc-serv{width: 100%;float: left;}
+.desc-serv h3{font-size: 1.3em; text-align: left;margin-bottom: 1rem;color: #333;font-style: italic;}
+.desc-serv h3 strong{color: #000;}
+.desc-serv a{color: #333;margin-left: 2px;float: left;}
+.desc-serv a .fa-angle-double-right{color: #DDB40D;font-size: 1.5em;margin-right: 0.2rem;}
+/*----------------------------------- FOOTER ---------------------------*/
+.footer-main{float: left;width: 100%;padding: 2rem 0;}
+.footer-main .newslleter h1, p{color: #fff;}
+.newslleter{text-align: center;}
+.form-newslleter{width: 100%;float: left; margin-bottom: 50px;}
+.form-newslleter .ipt-mail{width: 50%;height: 3.5rem;font-size: 2em;padding-left: 10px;margin: 2rem 25%; color: #fff;border: 1px solid rgba(255,255,255,0.9);background: transparent;outline: none;float: left}
+.form-newslleter input::placeholder{color: #fff;}
+.form-newslleter .btn-news{
+    padding: 0.5rem 3rem;
+    background: #fff;
+    font-size: 2em;
+    font-weight: 400;
+    outline: none;
+    border: 1px solid #fff;
+    margin-left: 25%;
+    float: left;
+}
+.form-newslleter .btn-news:hover{background: transparent;color: #fff; }
+.contact{width: 100%;float: left;}
+.contact .title-header-one{margin: 50px 0 0 0;}
+.main-footer .block-contact{width: calc(25% - 20px);margin: 40px 10px;float: left;}
+.main-footer .block-contact h4, p, a{color: #fff;line-height: 2;}
+.main-footer .block-contact h4 span{border-bottom: 1px solid #fff;}
+.main-footer .block-contact p, a{font-size: 0.9em;}
+.main-footer .block-contact .farede{width: 1.6rem;float: left;}
+.rede p{padding: 0 35%;}
+
+.block-contact .fa-envelope, .fa-phone{margin-right: 0.2rem;}
+.block-contact p .face:hover{color: #4267b2;}
+.block-contact p .insta:hover{color: #dd468d;}
+.copy p{font-size: 0.9em;}
+.logo-footer{width: 10rem;}
+.logo-footer a{width: 100%;}
+
+/*-------------------------------------PAGE SOBRE ----------------------------------------*/
+/*https://www.visivo.com.br/servicos?gclid=CjwKCAjw8ajcBRBSEiwAsSky_WCFILE7m5CyLvLrKe9YwV_DO5YUQ0UNKh560noNhse7TNU4FMm9PRoC4b4QAvD_BwE*/
+.sec-page-about{
+    position: relative;
+    background: url(../image/fd-quem-top.jpg);
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;    
+    width: 100%;
+    height: 35rem;    
+}
+
+.main_about{
+    position: relative;
+    background: url(../image/bg-quem-fd.jpg);
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;    
+    width: 100%;
+    height: 100%;
+    float: left;
+    padding: 3rem;    
+}
+.sec-about{ float: left;}
+
+.box-info-about{width: 90%;height: auto;margin: 3rem 5%;float: left;}
+.box-info-about .info-about-ttl{width: 100%;height: auto;background: rgba(255,255,255,0.5);float: left;padding: 0.5rem;}
+.box-info-about .info-about-ttl h1{color: #362e26;font-weight: 500;text-align: center;margin: 2rem 0;}
+.box-info-about .info-about-ttl h1:after{content: "";width: 100%;height: 1.5px;background: #362e26;display: block;line-height: 1.5;}
+.info-about-ttl .thumb-about{width: 50%;height: auto;float: left;margin-right: 2rem;}
+.desc-about{padding: 0 2rem;}
+.desc-about .txt-about{color: #362e26 !important;text-align: justify;font-weight: 400;}
+
+/*-------------------------------------PAGE CONTATO ----------------------------------------*/
+.sec-page-contact{
+    position: relative;
+    background: url(../image/fundo-contato.jpg);
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;    
+    width: 100%;
+    height: 35rem;
+}
+.description-page{position: absolute;top: 9rem;background: rgba(255,255,255,0.7);padding: 0.5rem 2rem;}
+.description-page h1{color: #222222;font-weight: 400;}
+.page-contant{padding: 5rem 0;}
+.box-contact{width: 100%;float: left;}
+.box-contact .art-form{width: 50%;float: left;}
+.box-contact .art-form h2{margin-bottom: 2rem;font-weight: 400;}
+.form-contact{width: 100%;float: left;}
+.form-contact input{width: 100%; height: 3rem;margin-bottom: 1rem;float: left;outline-color: #222222;padding-left: 1rem;font-size: 1.4em;}
+.form-contact input::placeholder{color: #222222;font-family: "ROBOTO", sans-serif;}
+.form-contact textarea{width: 100%; height: 6rem;margin-bottom: 1rem;float: left;outline-color: #222222;padding-left: 1rem;font-size: 1.4em;}
+.form-contact textarea::placeholder{color: #222222;}
+.form-contact .btnContact{width: 30%;background: #DDB40D;border: 1px solid #DDB40D;}
+.form-contact .btnContact:hover{background: #eacc4f;border: 1px solid #eacc4f;}
+.aside-contact{width: 45%;padding-left: 5rem;float: left;}
+.aside-contact h2{color: #222222;font-weight: 400;margin-bottom: 3rem;}
+.aside-contact p{color: #222222 !important;}
+.lista-social{position: relative;margin-top: 1rem;}
+.lista-social ul{position: relative;}
+.lista-social ul li{float: left;}
+.aside-contact .lista-social ul li a{width: 2.5rem;float: left;margin-right: 1rem;}
+.aside-contact .lista-social ul li .icone-rede img{width: 100%;}
+
+
+/*---------------------------------------------PAGE PORTIFÓLIO ------------------------------*/
+.sec-page-port{
+    position: relative;
+    background: url(../image/fundo-portifolio.jpg);
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;    
+    width: 100%;
+    height: 35rem;
+}
+
+.main_port{
+    position: relative;
+    background: url(../image/bg-portifolio.jpg);
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;    
+    width: 100%;
+    height: auto;
+    float: left;
+}
+
+.page-portifolio{float: left;width: 100%;}
+.page-portifolio{float: left;}
+.box-thumb-port{width: 100%;float: left;background: rgba(0,0,0,0.3);}
+.title-project{margin: 1rem;padding: 0.5rem 1rem;text-align: center;}
+.title-project h1{width: 15%; border: 1px solid #fff;font-size: 1.6em;color: #fff;font-weight: 500;}
+.box-thumb-port .link-thumb-single{width: calc(25% - 20px); margin: 0 10px 40px 10px;float: left;position: relative;}
+.link-thumb-single .layer-thumb-port{width: 100%;height: 95%;background: rgba(255,255,255,0.5);position: absolute;top: 0;padding-top: 20%;display: none;}
+.link-thumb-single:hover .layer-thumb-port{display: block;}
+
+/*------------------------------------ PAGE SINGLE PROJETOS --------------------------------------------*/
+.main-sg-project{
+    position: relative;
+    background: url(../image/bg-portifolio.jpg);
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;    
+    width: 100%;
+    height: auto;
+    float: left;
+    padding-top: 7.8rem;
+}
+.sec-project {float: left;}
+.sec-project .content-project{float: left;background: rgba(0,0,0,0.3);}
+.box-sg-port{width: 70%;margin-left: 1rem;float: left;}
+.box-sg-pj{width: 100%;padding: 2rem;}
+.thumb-sg-pj{width: 100%;float: left;text-align: center;color: #fff;}
+.thumb-sg-pj h2{width: 100%;font-weight: 400;}
+.thumb-sg-pj span{text-align: center;font-weight: 400;}
+.thumb-sg-pj img{float: left;margin: 1rem 0;}
+.desc-ssingle{width: 100%;float: left;margin-bottom: 2rem;}
+.desc-ssingle p{text-align: justify;}
+.sbar-project{width: 28%;float: left;padding-top: 6rem;padding-right: 1rem;}
+.box-sg-msg{width: 100%;float: left; background: rgba(255,255,255,0.7); padding: 1rem;margin-bottom: 1rem;}
+.box-sg-msg-pj h2{font-size: 1.3em;font-weight: 400;margin-bottom: 1rem;font-family: "ARIAL", sans-serif;}
+.form-pj{width: 100%;position: relative;float: left;}
+.form-pj .ipt-email{width: 100%;height: 2rem;border-radius: 5px;
+                    border-top: none;
+                    border-left: none;
+                    border-right: none;
+                    border-bottom: 1px solid #dedede;outline: none;
+                    padding-left: 2.5rem;
+                    margin-bottom: 1rem;
+                    font-family: "ARIAL", sans-serif;
+                    font-size: 1rem;          
+                    float: left;
+}
+.form-pj .ipt-email::placeholder{color: #222222;font-family: "ARIAL", sans-serif;}
+.form-pj .fa-envelope{position: absolute;top: 0.4rem;left: 0.6rem;}
+.btnSgEscreva{padding: 0.3rem 1rem;outline: none;border: 1px solid #333;background: #333;font-size: 1em;color: #fff;}
+.btnSgEscreva:hover{background: #4d4d4d;color: #fff;}
+
+.list-sg-pj{width: 100%;background: rgba(255,255,255,0.8);float: left;margin-bottom: 0.5rem;}
+.box-sg-desc-pj{width: 100%;float: left;padding: 0.3rem;}
+.box-sg-desc-pj a{width: 5rem;float: left;margin-right: 0.5rem;margin-top: 0.3rem;}
+.box-sg-desc-pj a img{width: 100%;float: left;}
+.desc-sg-pj{width: 100%;text-align: center;}
+.desc-sg-pj a{width: 60%;float: left;}
+.desc-sg-pj a h3{font-size: 1em;font-weight: 400;color: #333;text-transform: uppercase;border-bottom: 1px solid #333;float: left;}
+.desc-sg-pj .text-sg{width: 60%;float: left;}
+.desc-sg-pj p{font-size: 1em;font-weight: 300;color: #333 !important;margin: 0;text-align: left;}
+
+
+
+
+
+
+/*------------------------------------BLOG --------------------------------------------*/
+.sec-page-blog{
+    position: relative;
+    background: url(../image/leticia.jpg);
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;    
+    width: 100%;
+    height: 35rem;
+}
+.main-blog{float: left;background: #e8e6e6;font-family: 'Open Sans Condensed', sans-serif;}
+.sec-artigo{float: left;background: #f5f5f5;margin-bottom: 1rem;}
+.box-search{width: 50%;float: left;margin: 1rem 0 0 2.1rem;}
+.form-search{position: relative;}
+.form-search .search{width: 100%;height: 2rem;padding-left: 3rem;font-size: 1.3em; border-radius: 5px; border: 1px solid  #ccc; outline: none;}
+.btn-search{border: 0px;background: transparent;position: absolute;top: 6px;left: 10px;outline: none;cursor: pointer;}
+.btn-search .fa-search{font-size: 1.5em;color: #ccc;font-family: 'Open Sans Condensed', sans-serif;}
+.new-box{float: left;width: 100%;}
+.box-blog{float: left;padding: 2rem;width: 70%;}
+.artigo{width: 100%;float: left;}
+.thumb-blog{width: calc(50% - 20px);margin: 1rem 10px;float: left;padding: 1.5rem;}
+.desc-blog{text-align: center;margin-bottom: 1rem;}
+.desc-artigo{width: 100%;text-align: center;background: #fff;}
+.desc-blog h2{margin-bottom: 0.2rem;}
+.desc-artigo h2{margin-bottom: 0.2rem;}
+.desc-blog h2 a{color: #333;line-height: 1;font-weight: 400;}
+.desc-blog h2 a:hover{text-decoration: underline;}
+.link-thumb{position: relative;margin-bottom: 1rem;float: left;}
+.shadow-left{left: -20px;background-position: 0 0; background-position-x: 0px; background-position-y: 0px;}
+.shadow-right{right: -20px; background-position: 100% 0; background-position-x: 100%; background-position-y: 0px;}
+.sh-right{
+    position: absolute;
+    bottom: -26px;
+    width: 165px;
+    height: 26px;        
+    background-image: url(../image/liftedshadow_medium.png);
+    background-repeat: no-repeat;
+    background-repeat-x: no-repeat;
+    background-repeat-y: no-repeat    
+}
+
+.sh-left{
+    position: absolute;
+    bottom: -26px;
+    width: 165px;
+    height: 26px;
+    background-image: url(../image/liftedshadow_medium.png);
+    background-repeat: no-repeat;
+    background-repeat-x: no-repeat;
+    background-repeat-y: no-repeat
+}
+.text-blog{float: left;margin-bottom: 0.5rem;}
+.box-btn-mais{width: 100%;float: left;text-align: center;}
+.btn-mais{background: #333;color: #fff;padding: 0.3rem 2rem;}
+.btn-mais:hover{background: #5d5b5b;}
+.aside-blog{float: left;width: 28%;margin: 0.3rem;float: left;margin-top: 3rem;}
+.box-msg{width: 100%;float: left;padding: 1rem;margin-bottom: 1rem;}
+.box-msg-blog h2{font-size: 1.3em;font-weight: 400;margin-bottom: 1rem;font-family: "ARIAL", sans-serif;}
+.form-blog{width: 100%;position: relative;float: left;}
+.form-blog .ipt-email{width: 100%;height: 2rem;border-radius: 5px;
+                      border-top: none;
+                      border-left: none;
+                      border-right: none;
+                      border-bottom: 1px solid #dedede;outline: none;
+                      padding-left: 2.5rem;
+                      margin-bottom: 1rem;
+                      font-family: "ARIAL", sans-serif;
+                      font-size: 1rem;          
+                      float: left;
+}
+
+.form-blog .ipt-email::placeholder{color: #222222;font-family: "ARIAL", sans-serif;}
+.form-blog .fa-envelope{position: absolute;top: 0.4rem;left: 0.6rem;}
+.btnEscreva{
+    padding: 0.3rem 1rem;outline: none;
+    border: 1px solid #333;background: #333;
+    font-size: 1em;color: #fff;
+}
+.btnEscreva:hover{background: #4d4d4d;color: #fff;}
+.sing-artigo{ float: left;padding: 2rem;width: 67%;margin-top: 3rem;background: #fff;    margin-left: 1rem;margin-bottom: 2rem;}
+.artigo{position: relative; float: left;padding-left: 5px;}
+.artigo h2{margin-bottom: 0.2rem;font-weight: 400;text-transform: uppercase;}
+.text-artigo{width: 100%;float: left;}
+.artigo .text-artigo p{color: #333 !important;}
+.list-artigo{width: 100%;background: #fff;float: left;margin-bottom: 0.5rem;}
+.box-artigo{width: 100%;float: left;padding: 0.3rem;}
+.thumb-art{position: relative;margin-bottom: 1rem;float: left;}
+.box-artigo a{width: 5rem;float: left;margin-right: 0.5rem;margin-top: 0.3rem;}
+.box-artigo a img{width: 100%;float: left;}
+.desc-artigo {width: 100%;text-align: center;}
+.desc-artigo a{width: 60%;float: left;}
+.desc-artigo a h3{font-size: 1em;font-weight: 400;color: #333;text-transform: uppercase;border-bottom: 1px solid #333;float: left;}
+.desc-artigo p{width: 50%;float: left; font-size: 1em;font-weight: 300;color: #333 !important;margin: 0;}
+/*----------- PAGE SINGLE BLOG -----------------*/
+.sing-search{width: 100%;float: left;}
+.artigo-search{width: 100%;float: left;}
+.space-top{width: 100%;height: 8rem;float: left;}
+.thumb-search{width: calc(25% - 20px);float: left; margin: 0.5rem 10px;}
+
+
+/*----------------------SINGLE BLOG --------------------------------
+https://www.numenarquitetura.com/blog*/
+
+/*https://www.numenarquitetura.com/single-post/A-Arquitetura-da-Copa-do-Mundo-2018*/
+/*----------------------  ------------------------------*/
